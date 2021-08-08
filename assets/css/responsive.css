@@ -1,0 +1,520 @@
+/* MOBILE VA TABLET*/
+@media (max-width: 1023px)
+/* @media(min-width:740px) */
+{    *{
+    -webkit-tap-highlight-color:transparent;
+    /* THUOC TINH NAY DE LOAI BO MAU NEN KHI AN VAO CAC THE A TREN MOBILE VA TABLET */
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        background-color: #555555;
+    }
+    .header__logo{
+        padding-bottom: 8px;
+    }
+    .search{
+        padding: 370px 10px 200px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search__text{
+        padding-top: 35px;
+        padding-bottom: 65px;
+        margin: 0;
+    }
+    
+.mt-24{
+    margin-top:24px;
+}
+.search__wrap{
+    display: flex;
+    background-color: var(--white-color);
+    width: 718px;
+    padding: 0 15px;
+    margin-bottom: 55px;
+}
+.search-select{
+    padding: 12px 20px;
+}
+
+.search__travel-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 30px;
+}
+.search__travel-item{
+   margin-left: 0;
+   width: 100%;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+.search__travel-img{
+    width: 40px;
+    height: 40px;
+    padding-bottom: 5px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content__text{
+    margin-right: auto;
+    padding: 70px 25px 40px 25px;
+
+}
+.banner-img{
+    height: 330px;
+}
+.package-book-btn{
+    margin-bottom: 40px;
+}
+.best-content__info-time{
+    width: 100%;
+}
+.travel-content-item{
+    padding-bottom: 12px;
+}
+.travel-desc{
+    margin-bottom: 50px;
+}
+.discover{
+    display: block;
+}
+.discover-child-first{
+    padding: 60px 15px;
+}
+.discover-child-second{
+    padding: 60px 15px;
+}
+.promotion{
+    padding: 390px 0 75px;
+}
+.promotion-item{
+    padding: 15px 0;
+}
+.promotion-item__img{
+    height: 448px;
+}
+.footer-heading{
+    display: block;
+}
+.footer-btn{
+    padding-bottom: 70px;
+}
+.footer-btn__link{
+    width: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contact{
+    padding: 35px 30px;
+}
+
+.footer-contact-socials p{
+    margin-bottom: 25px;
+}
+.footer-contact-socials__link{
+    padding-bottom: 35px;
+}
+.mt-35{
+    margin-top: 35px;
+}
+/* ====================HET PHAN RESPONSIVE CUA PHAN H0ME====================== */
+/* ====================RESPONSIVE CUA PHAN PACKAGE============================== */
+.package-search{
+    padding-top: 325px;
+    padding-bottom: 50px;
+}
+.package-search__title{
+    margin-bottom: 0;
+}
+.package-search-content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.package-search-content__item{
+    padding: 15px;
+}
+.more-filter{
+    top: calc(100% + 406px);
+}
+.more-filter-content{
+    width: 100%;
+}
+.more-filter-hover::before{
+    display: none;
+}
+.more-filter-content__item-item{
+    padding: 6px 0;
+}
+.promotion {
+    padding: 480px 0 75px;
+}
+/* --------------------------RESPONSIVE PHAN SHOP----------------- */
+.search__heading-shop{
+    padding: 315px 0 65px 0;
+}
+.tour-item__img img{
+    width: 100%;
+}
+/* ---------------------------RESPONSIVE PHAN ABOUT US------------- */
+.search__heading-about{
+    padding: 315px 0 65px 0;
+}
+.about-content__left{
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 40px;
+}
+.about-content__img img{
+    width: 100%;
+}
+.our-staff img{
+    height: unset;
+}
+.about-destination{
+
+    padding-top: 2820px;
+}
+.option-counter{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.option-counter__item{
+    padding: 20px 0 20px 0;
+}
+.option-counter__quantity{
+    padding: 4px 0 14px 0;
+}
+.option-counter__content{
+    padding-bottom: 0px;
+}
+.option-counter-wrap{
+    padding: 85px 10px;
+}
+/* -----------------------RESPONSIVE PHAN NEWS---------------------------- */
+.search__heading-news{
+    padding: 315px 0 65px 0;
+}
+.mt-24-tablet{
+    margin-top: 24px;
+}
+/* -----------------------------------RESPONSIVE PHAN CONTACT--------------- */
+.search__heading-contact{
+    padding: 315px 0 65px;
+}
+.contact-wrap{
+    padding: 10px 0;
+}
+.contact-map{
+    width: 100%;
+}
+/* --------------RESPONSIVE PHAN MENU ----------------------- */
+.slide-menu{
+    width: 300px;
+    background-color: #555555;
+    border-left: unset;
+}
+.slide-menu-nav{
+    padding: 40px 0 40px 40px;
+    list-style-type: none;
+}
+.slide-menu-nav__item{
+    margin-bottom: 30px;
+
+}
+.slide-menu-nav__item-link{
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* phan subnav */
+.slide-menu-subnav{
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+.slide-menu-subnav__item{
+
+}
+.slide-menu-subnav__item-link{
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+    color: var(--white-color);
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+/* phan subnav second */
+.slide-menu-subnav-second{
+    list-style-type: none;
+    padding-left: 20px;
+}
+.slide-menu-subnav-second__item{
+
+}
+.slide-menu-subnav-second__item-link{
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+    color: var(--white-color);
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+}
+/*=================================== TABLET=================================== */
+
+@media(min-width:740px){
+    .hide-on-tablet{
+        display: none;
+    }
+}
+
+/* mobile */
+@media(max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+.search__heading--mobile{
+    display: block;
+    color: var(--white-color);
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.search__heading--mobile u{
+        text-decoration: underline #f339d4;/*tao phan gach chan o duoi 1 chu trong the u*/
+}
+.search__text{
+    text-align: center;
+    line-height: 3rem;
+}
+.search__wrap{
+    width: 300px;
+}
+.search-select{
+    width: 100%;
+    outline: none;
+}
+.banner-content__btn{
+    margin-bottom: 80px;
+ 
+}
+.best-place{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.best-content__info{
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+   
+
+}
+.best-content__info img{
+    width: 100%;
+    height: 160px;
+}
+.best-content__info-time{
+    display: block;
+    position: absolute;
+    top: 160px;
+   
+    background-color: unset;
+    width: 293px;
+}
+.best-content__info-time-item{
+    background-color:#14b9d5;
+    width: 100%;
+   
+}
+
+.best-content__info-time-item::after{
+    display: none;
+}
+.travel-desc{
+    margin-top: 180px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.travel-content-item{
+    padding-bottom: 30px;
+}
+.promotion{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer-btn{
+    display: block;
+    
+}
+.footer-btn__input{
+    width: 100%;
+}
+.footer-btn__link{
+    min-width: 100%;
+}
+.pad-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.footer-copy-right{
+    display: block;
+    padding: 0;
+}
+
+.footer-copy-right h6{
+    text-align: center;
+    padding: 20px;
+    line-height: 2rem;
+}
+/* ========================RESPONSIVE PHAN PACKAGE============================ */
+.package-search__heading{
+    text-align: center;
+}
+
+.package-search-content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.more-filter-hover{
+    top:calc(100% + 12px);
+    width: 333px;
+}
+/*  ---------------------------RESPONSIVE PHAN SHOP------------------*/
+.search__heading-shop{
+    text-align: center;
+}
+.tour-item__img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.tour-item__content{
+    padding-left: 25px ;
+    padding-right: 25px;
+}
+.tour-item__img--sale{
+    right: 40px;
+}
+/* --------------------------RESPONSIVE PHAN ABOUT US----------------------- */
+.search__heading-about{
+    text-align: center;
+}
+.about-content__left{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    line-height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.about-content__right--first{
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.about-content__right--second{
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.about-content__img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.about-content__img img{
+    /* height: px; */
+    height: 506px;
+}
+.about-contact__paragrap{
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 2px;
+}
+.our-staff{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.about-destination{
+    padding-top: 1600px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* -------------------------RESPONSIVE PHAN NEWS-------------- */
+.search__heading-news{
+    text-align: center;
+}
+.news-body__item{
+    padding-left: 25px;
+    padding-right: 25px;
+    height: unset;
+    flex-direction: column;
+}
+.news-body .col:nth-child(2) .news-body-item-info{
+    border-left: 1px solid #dadada;
+}
+
+.news-body .col:nth-child(3) .news-body-item-info{
+    border-right: 1px solid #dadada;
+}
+
+.news-body__item--img img{
+    height: 393px;
+}
+.news-body-item-info{
+    margin-top: -5px;
+
+}
+.news-body .col:nth-child(3) .news-body__item,
+.news-body .col:nth-child(4) .news-body__item{
+    flex-direction: column-reverse;
+}
+/* ---------------------------RESPONSIVE PHAN CONTACT------------------------ */
+.search__heading-contact{
+    text-align: center;
+}
+.contact{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.contact-form__btn{
+    width: 100%;
+}
+}
+/* pc */
+@media(min-width:1024px){
+    .hide-on-pc{
+        display: none;
+    }
+   
+}

@@ -1,0 +1,1656 @@
+.header-with-search{
+    background-position: bottom center;
+    position: relative;
+    background-size: cover;
+    background-image: url(/assets/img/parallax-2.jpg);
+}
+.header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+}
+.header__logo{
+    padding: 0 15px;
+    width: 220px;
+}
+.header__logo-img{
+    width: 160px;
+    height: 38px;
+}
+.header__navbar-list{
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+    padding: 0 15px;
+}
+.header__navbar-item{
+    position: relative;
+}
+.header__navbar-item-link{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 25px 15px;
+    letter-spacing:2px;/*day la thuoc tinh do rong giua cac chu trong 1 tu*/
+    line-height: 1.4rem;
+}
+/* PHAN O BOOK NOW CUA THANH NAVBAR */
+.header__navbar-btn{
+    margin-right: 355px;
+    background-color: #BA71DA;
+    padding: 11px 12px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.header__navbar-btn-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+.header__navbar-btn:hover{
+    background: linear-gradient(to left bottom, #ba71da 0%, #da717b 100%);
+}
+/* PHAN ICON BAR */
+.header__menu{
+    width: 25px;
+}  
+.header__menu-icon{
+    font-size: 3rem;
+    color: rgb(171,189,195);
+}
+.header__menu:hover{
+    transform: scale(1.1);
+}
+/* SUBNAV FIRST */
+.header__subnav{
+    border-radius: 2px;
+    position: absolute;
+    min-width: 190px;
+    background-color: #fff;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    box-shadow:0px 2px 5px #f1f1f1;
+    z-index: 1;
+    display: none;
+}
+.header__navbar-item:hover .header__subnav{
+    display: block;
+}
+.header__subnav-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid #eeeeee;
+}
+.header__subnav-item:hover{
+    background-color: #f9f9f9;
+}
+.header__subnav-item-link{
+    padding: 15px 25px;
+    letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color-sub);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.header__subnav-item-icon{
+    color: var(--text-color-sub);
+    font-size: 1.6rem;
+}
+/*  SUBNAV SECONDARY*/
+.header__subnav-secondary{
+    border-radius: 2px;
+    position: absolute;
+    min-width: 190px;
+    background-color: #fff;
+    list-style-type: none;
+    top: 0;
+    left: calc(100% + 16px);
+    box-shadow:0px 2px 5px #f1f1f1;
+    display: none;
+}
+.header__subnav-secondary-item{
+    display: flex;
+    align-items: center;
+}
+.header__subnav-secondary-link{
+    padding: 15px 25px;
+    letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color-sub);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.header__subnav-item:hover > .header__subnav-secondary{
+    display: block;
+}
+.header__subnav-secondary-item:hover{
+    background-color: #f9f9f9;
+}
+.header__subnav-secondary-item span{
+    color: var(--white-color);
+    padding: 0px 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 6px;
+    background-color: #14b9d5;
+}
+.header__subnav-secondary::before{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 48px;
+    background-color: transparent;
+    position: absolute;
+    left: -24px;
+    top: 0;
+}
+/* DAY LA CHU HOT SAU PHAN SUBNAV */
+.header__subnav-item-link-first,
+.header__subnav-item-link-second{
+    color: var(--white-color);
+    padding: 0px 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+.header__subnav-item-link-first{
+    background-color: #f76570;
+}
+.header__subnav-item-link-second{
+    background-color:  #1bbc9b;
+}
+.header__subnav-item-icon{
+
+}
+/* CHUYEN SANG PHAN LAM O SEARCH OPTION */
+.search{
+    padding: 270px 0px 190px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search__heading{
+    color: var(--white-color);
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold;
+}
+.search__heading u{
+        text-decoration: underline #f339d4;/*tao phan gach chan o duoi 1 chu trong the u*/
+}
+.search__text{
+    margin: 35px 0 40px;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 4px;
+    font-weight: normal;
+    color: var(--white-color);
+}
+.search__wrap{
+    display: flex;
+    width: 400px;
+    font-size: 1.4rem;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+}
+.search-select{
+    font-size: 1.6rem;
+    width: 100%;
+    color: var(--text-color-sub);
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.search-select__option{
+}
+.search-btn{
+    position: absolute;
+    right:12px;
+    cursor: pointer;
+}
+.search-btn-icon{
+    font-size: 2rem;
+    color: var(--text-color-sub);
+    font-weight: 200;
+}
+/* PHAN 4 CAI PICTURE TRONG PHAN SEARCH */
+.search__travel-list{
+    display: flex;
+    padding-top: 50px;
+}
+.search__travel-item{
+    padding: 20px;
+    margin: 0 15px;
+    width: 113px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search__travel-img{
+    width: 40px;
+    height: 40px;
+}
+.search__travel-text{
+    font-size: 1.2rem;
+    color: var(--white-color);
+    margin-top: 8px;
+    letter-spacing: 1.5px;
+}
+/*-----------------------------------------KET THUC O HEADER VA O TIM KIEM--------------------------------------  */
+/*-----------------------------------BAT DAU PHAN DE XUAT CAC TOUR----------------------------------------------- */
+.proposal{
+    padding-top: 60px;
+}
+.proposal-heading{
+    color: var(--text-color);
+    text-align: center;
+}
+.proposal-title{
+    color: #555555;
+    text-align: center;
+}
+.proposal-title u{
+    text-decoration: underline rgb(27,188,155);
+}
+.section-title{
+
+}
+.proposal-item{
+    position: relative;
+}
+.proposal-item__img{   
+    width: 100%;
+    margin-bottom: -4px;
+    /* sua loi cai anh khong cao het duoc cai item khi hover vao thi cai hover no xuong thap hon cai anh 1 ty */
+}
+.proposal-item__content{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+}
+.proposal-item__content-heading{
+    font-size: 2rem;
+    padding-bottom: 6px;
+    color: var(--white-color);
+    line-height: 2rem;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgb(0 0 0 / 100%);
+}
+.proposal-item__content-quantity{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    line-height: 1.4rem;
+    font-weight: 400;
+    text-shadow: 0 0 8px rgb(0 0 0 / 100%);
+}
+.proposal-item__icon{
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.proposal-item__icon-img{
+    color: blue;
+    width: 100%;
+    text-shadow: 0 0 8px rgb(0 0 0 / 50%);
+}
+/* hover vao item thi hien thi phan nay len */
+.proposal-item__hover{
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #14b9d5;
+    display: none;
+    animation: fadeIn linear 0.8s;
+
+}
+.proposal-item:hover .proposal-item__hover{
+    display: flex;
+}
+.proposal-item__hover-head{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 18px;
+    color: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.proposal-item__hover-detail{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 7px 0px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.proposall-item__hover-btn{
+    padding: 8px 16px;
+    margin-top: 24px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    color: #14b9d5;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+/* CHUYEN SANG PHAN BANNER */
+.banner{
+    margin-top: 80px;
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    height: 235px;
+    object-fit: cover;/*thuoc tinh nay tuong tu nhu background-size: cover; muc dich de hien thi size anh xem kieu gi*/
+}
+.banner-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content__text{
+    margin-right: 68px;
+}
+.banner-content__text-small{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.banner-content__text-big{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.banner-content__text-big u{
+    text-decoration: underline #f76570;;
+}
+.banner-content__btn{
+    color: #f76570;
+    padding: 15px 35px;
+    text-transform: uppercase;/*cai nay la de viet hoa*/
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    margin-left: 68px;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    text-decoration: none;
+}
+/* ------------------SANG PHAN BEST PLACE-------------------- */
+.best-place{
+    padding-top: 75px;
+    padding-bottom: 105px;
+ }
+.best-content__text{
+
+}
+.best-content__text-heading{
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+.best-content__text-title{
+    color: #555555;
+    margin-bottom: 30px;
+}
+.best-content__text-title u{
+    text-decoration: underline #14b9d5;
+}
+.best-content__text-paragrap{
+    margin-bottom: 22px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.best-content-price{
+
+}
+.best-content-price__old{
+    font-size: 3rem;
+    color: #DADADA;
+    text-decoration: line-through;/*tao gach ngang o giua 1 chu*/
+}
+.best-content-price__current{
+    font-size: 3rem;
+    padding-left: 8px;
+    color: #555555;
+}
+.best-content-price__desc{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+.package-book-btn{
+    border-radius: 30px;
+    padding: 15px 35px;
+    background-color: #1bbc9b; 
+    margin-top: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    display: inline-block;/*neu khong cho inline thi no se chiem het ca chieu ngang luon*/
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.package-book-btn:hover{
+    opacity: 0.9;
+    background-color: #23b393;
+}
+/* phan content info */
+.best-content__info{
+    height: 410px;
+    position: relative;
+}
+.best-content__info img{
+    width: 100%;
+    height: 100%;
+}
+.best-content-slider{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+.best-content-slider__btn{
+    width: 50px;
+    height: 3px;
+    background-color: rgba(173,199,219, 0.8);
+    margin: 18px 12px;
+}
+.best-content-slider__btn:hover{
+    background-color: var(--white-color);
+}
+.active{
+    background-color: var(--white-color);
+}
+.best-content__info-time{
+    position: absolute;
+    background-color:#14b9d5;
+    bottom: -50px;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style-type: none;
+}
+.best-content__info-time-item{
+    flex: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.best-content__info-time-item::after{
+    display: block;
+    content: "/";
+    position: absolute;
+    top: 36px;
+    right: -12px;
+    color: #000;
+    opacity: 0.05;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.best-content__info-time-item:last-child::after{
+    display: none;
+    /* cai cuoi cung khong co gach */
+}
+.best-content__info-time-item h1{
+    font-size: 3.5rem;
+    color: var(--white-color);
+    margin-bottom:0px ;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    line-height: 3.5rem;
+    font: 400;
+}
+.best-content__info-time-item h6{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-bottom: 30px;
+    line-height: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+/*description travel */
+.travel-desc{
+    margin-bottom: 85px;
+}
+.travel-content-item{
+   display: flex;
+}
+.travel-content-item__img{
+    width: 50px;
+    height: 50px;
+    margin-right: 22px;
+    margin-bottom: 90px;
+}
+.travel-content-item__text{
+    display: inline-block;
+}
+.travel-content-item__text h2{
+    font-size: 2.4rem;
+    color: #555555;
+}
+.travel-content-item__text p{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin: 20px 0px;
+    line-height: 2.4rem;
+    letter-spacing: 2px;
+}
+.travel-content-item__text a{
+    font-size: 1.4rem;
+    color: #14b9d5;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+/* phan discover */
+.discover{
+    display: flex;
+    height: 270px;
+}
+.discover-child{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.discover-child-first{
+    background-image: url(/assets/img/parallax-5-filter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.discover-child-second{
+    background-image: url(/assets/img/parallax-6-filter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.discover-child__heading{ 
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.discover-child__title{
+    color: var(--white-color);
+    letter-spacing: 2px;
+    margin: 17px 0 34px;
+}
+.discover-child__btn{
+    padding: 15px 35px;
+    background-color: var(--white-color);
+    letter-spacing: 2px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.discover-child__btn-first{
+    color: #f3a46b;
+}
+.discover-child__btn-second{
+    color:var(--primary-color) ;
+}
+.discover-child__btn:hover{
+    opacity: 0.9;
+}
+/* phan promotion */
+.promotion{
+    padding: 60px 0 75px;
+}
+.promotion-heading{
+    text-align: center;
+    color: var(--text-color);
+}
+.promotion-title{
+    text-align: center;
+    color: #555555;
+}
+.promotion-title u{
+    text-decoration: underline var(--primary-color);
+}
+.promotion-item{
+    position: relative;
+}
+.promotion-item__img{
+    height: 230px;
+}
+.promotion-item__img > img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.promotion-item__icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-172%);
+    right: 24px;
+}
+/* thay doi mau nen cho tung icon ma khong can dat class choo tung icon  */
+.col.l-4:nth-child(1) .promotion-item__icon{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.col.l-4:nth-child(2) .promotion-item__icon{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.col.l-4:nth-child(3) .promotion-item__icon{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+.promotion-item__icon > img{
+    width: 26px;
+    height: 26px;
+    margin: auto;
+}
+.promotion-item__content{
+    padding: 30px;
+    border-bottom:1px solid rgb(0 0 0 / 8%) ;
+    border-left:1px solid rgb(0 0 0 / 8%) ;
+    border-right:1px solid rgb(0 0 0 / 8%) ;
+}
+.promotion-item__content-heading{
+    margin-bottom: 11px;
+    font-size: 2rem;
+    color: #555555;
+
+}
+.promotion-item__content-locati{
+    margin-bottom: 22px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+}
+.promotion-item-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top:1px solid rgb(0 0 0 / 8%) ;
+}
+.promotion-item-link{
+}
+.promotion-item-link > a{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.wrap-link{
+
+}
+.wrap-link a{
+    font-size: 1.3rem;
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    font-weight: 400;
+
+}
+.wrap-link span{
+    padding: 2px 10px;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 10px;
+    font-size:1rem;
+    letter-spacing: 1px;
+    line-height: 1rem;
+}
+.promotion-item-money__current{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #56595f;
+    font-weight: 400;
+}
+.promotion-item-money__old{
+    font-size: 2rem;
+    line-height: 2rem;
+    color:  #9ba2ab;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+.promotion-item__content-desc{
+    padding: 20px 0;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    letter-spacing: 1.5px;
+    border-top:1px solid rgb(0 0 0 / 8%) ;
+
+}
+.promotion-item__content-btn{
+    font-size: 1.4rem;
+    line-height:2.7rem;
+    display: inline-block;
+    color: var(--white-color);
+    padding: 5px 20px ;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.btn-yellow:hover{
+    background: linear-gradient(to left bottom, #ffd205 0%, #ff9b05 100%);
+}
+.btn-pink:hover{
+    background: linear-gradient(to left bottom, #f76570 0%, #f75c2d 100%);
+}
+.btn-puple:hover{
+    background: linear-gradient(to left bottom, #ba71da 0%, #da717b 100%);
+}
+/* PHAN FOOTER */
+.footer{
+    background-size: cover;
+    background-image: url(/assets/img/parallax-7.jpg);
+    /* url(/assets/img/footer_background.jpg) */
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+.footer-wrap{
+}
+.footer-heading-with-btn{
+   
+}
+.footer-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.footer-heading__text-heading{
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.footer-heading__text-title{
+    color: #555555;
+}
+.footer-btn{
+   display: flex;
+   margin-top: 30px;
+   padding: 0 15px;
+}
+.footer-btn__input{
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    flex: 1;
+}
+.footer-btn__link{
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-contact{
+    background-color: var(--white-color);
+    padding: 45px;
+}
+.footer-contact{
+}
+.footer-contact-socials{
+}
+.footer-contact-socials img{
+    width: 150px;
+}
+.footer-contact-socials p{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    color: var(--text-color);
+    margin: 30px 30px 30px 0;
+    letter-spacing: 1px;
+}
+.footer-contact-socials__link{
+    display: flex;
+    list-style-type: none;
+}
+.footer-contact-socials__link-item{
+   cursor: pointer;
+   margin-right: 20px;
+   font-size: 2.4rem;
+   color: #555555;
+}
+.footer-contact-menu{
+
+}
+.footer-contact-menu__heading{
+    margin-bottom: 35px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #555555;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.footer-contact-menu__list{
+    list-style-type: none;
+}
+.footer-contact-menu__item{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.footer-contact-menu__icon{
+    margin-right: 4px;
+}
+.footer-copy-right{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+.footer-copy-right h6{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+/* ------------------------------PHAN TRANG CON PACKAGE------------------------------------------- */
+.header-with-search-package{
+    background-position:center;
+    position: relative;
+    background-image: url(/assets/img/parallax-search-2.jpg);
+    z-index: 11;
+}
+.header__navbar-btn-package{
+    background-color: #f76570;
+}
+.header-package{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.package-search{
+    padding: 240px 0 130px 0;
+}
+.package-search__heading{
+    color: var(--white-color);
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+.package-search__title{
+    color: var(--white-color);
+    margin-bottom: 40px;
+}
+.package-search__title u{
+    text-decoration: underline #f76570;
+}
+.package-search-content{
+
+}
+.pakega-search-content__item{
+
+}
+.package-search-content{
+    padding: 35px;
+    background-color: var(--white-color);
+}
+.package-search-content__item{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    width: 100%;
+/*  */
+}
+.package-search-content__item-head{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #555555;
+}
+.package-search__item-select{
+    font-size: 1.6rem;
+    width: 100%;
+    color: var(--text-color-sub);
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+.package-search-content__item-icon{
+    font-size: 2rem;
+    position: absolute;
+    top: 58px;
+    right: 34px;
+    color: var(--text-color-sub);
+}
+.package-search-content__item-input{
+    font-size: 1.6rem;
+    width: 100%;
+    color: var(--text-color-sub);
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+.package-search-input--range{
+    width: 100%;
+    height: 5px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom:24px;
+}
+.package-search-lable{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 8px;
+    letter-spacing: 2px;
+}
+.more-filter{
+}
+.more-filter{
+    color: var(--white-color);
+    background-color:#e27557;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 10px 22px;
+    border-radius: 30px;
+    top: 518px;
+}
+.more-filter-head{
+    letter-spacing: 1px;
+}
+.more-filter-hover{
+    position: absolute;
+    top:144%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 9999;
+}
+.more-filter:hover .more-filter-hover{
+    z-index: 9999;
+    display: block;
+}
+.more-filter-hover::before{
+    display: block;
+    content: "";
+    border-width: 20px 28px;
+    border-color: transparent transparent var(--white-color) transparent;
+    border-style: solid;
+    position: absolute;
+    top: -12%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.more-filter-head::after{
+    display: block;
+    content: "";
+    width: 140px;
+    height: 60px;
+    position: absolute;
+    top: 46%;
+    right: 50%;
+    transform: translateX(50%);
+    background-color:transparent;
+}
+.more-filter-content{
+    padding: 25px;
+    background-color: var(--white-color);
+    width: 702px;
+    border: 1px solid #ccc;
+}
+.more-filter-content__item{
+}
+.more-filter-content__item h5{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    color: #555555;
+}
+.more-filter-content__item-list{
+    list-style-type: none;
+}
+.more-filter-content__item-item{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 10px 0;
+}
+.more-filter-content__item-item input{
+    margin-right: 8px;
+}
+/* ===============================================DEN PHAN SHOP===================================== */
+.header-with-search-shop{
+    background-image: url(/assets/img/parallax-4-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.search__heading-shop {
+    text-align: left;
+    color: var(--white-color);
+    padding: 212px 0 50px 0;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 1);
+    margin: 0;
+}
+.tour{
+    padding: 68px 0px;
+}
+.tour-item{
+
+}
+.tour-item__img{
+    position: relative;
+    height: 282px;
+}
+.tour-item__img img{
+    height: 282px;
+    object-fit: cover;
+}
+.tour-item__img--sale{
+    position: absolute;
+    padding: 8px;
+    background-color: #1bbc9b;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    top: 12px;
+    right: 12px;
+    color: var(--white-color);
+    border-radius: 2px;
+}
+
+.tour-item__content{
+    margin-bottom: 40px;
+}
+.tour-item__content--place{
+
+    font-size: 2rem;
+    color: var(--text-555);
+    line-height: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 24px 0 16px;
+    display: block;
+    text-decoration: none;
+  
+}
+.tour-item__content--rate{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    display: block;
+    text-decoration: none;
+    margin-top: 12px;
+
+
+}
+.tour-item__content--price{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    display: block;
+    display: block;
+    text-decoration: none;
+
+}
+.tour-item__content--btn{
+    padding: 10px 16px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    border: 1px solid #e7e7e7;
+    text-decoration: none;
+    display: inline-block;
+
+}
+/* ===================================ABOUT US================================ */
+.header-with-search-about{
+    background-image: url(/assets/img/parallax-3-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.header__menu-icon-aboutus{
+    font-size: 3rem;
+    color: rgb(226, 232, 235);
+}
+.search__heading-about{
+    text-align: left;
+    color: var(--white-color);
+    padding: 220px 0 60px 0;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 1);
+    margin: 0;
+}
+.about-content{
+    /* padding: 80px; */
+    padding: 65px 0px 65px 0px;
+
+}
+.about-content__left{
+    font-size: 4rem;
+    color: var(--text-555);
+    line-height: 4.5rem;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 40px;
+
+}
+.about-content__right--first{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.4rem;
+    padding-top: 15px;
+    letter-spacing: 1px;
+
+}
+.about-content__right--second{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.4rem;
+    text-align: left;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+.about-content__img{
+   display: flex;
+   padding-top: 65px;
+}
+.about-content__img img{
+    width: 816px;
+    height: 612px;
+    margin: auto;
+}
+.about-contact{
+    background-image:linear-gradient(to left, rgba(29, 43, 100, 0.3), rgba(248, 205, 218, 0.6)), url(/assets/img/parallax-15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+    margin-bottom: 412px;
+    
+}
+.about-contact-wrap{
+    padding: 100px 0 200px 0;
+}
+.about-contact__title{
+    color: var(--white-color);
+    margin: 0;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+
+}
+.about-contact__paragrap{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: var(--white-color);
+    padding-top: 50px;
+    text-align: center;
+}
+.about-contact__btn{
+    padding: 12px 24px;
+    margin-top: 40px;
+    background-color: #f3a46b;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.about-contact__btn:hover{
+    background-color:rgb(246,156,95);
+}
+.our-staff{
+   position: absolute;
+   top: calc(100% - 100px);
+   left: 50%;
+   transform: translateX(-50%);
+}
+.our-staff__img{
+    height: 253px;
+    width: 100%;
+    object-fit: cover;  
+
+}
+.our-staff-desc{
+    padding: 20px;
+    /* border: 1px solid #000; */
+}
+.our-staff__name{
+    font-size: 2.5rem;
+    color: var(--text-555);
+    padding-bottom:10px ;
+    text-align: center;
+    
+
+}
+.our-staff__rank{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+.our-staff__info{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+
+}
+.our-staff__contact{
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+    text-transform: uppercase;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.about-destination{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about-destination-heading{
+    text-align: center;
+    color: var(--text-color);
+
+}
+.about-destination-title{
+    text-align: center;
+    color: var(--text-555);
+    
+}
+
+.about-destination-title u{
+    text-decoration: underline var(--primary-color);
+}
+
+.about-destination__head{
+   font-size: 1.7rem;
+   letter-spacing: 1px;
+   color: var(--text-555);
+   line-height: 2.8rem;
+   font-weight: 600;
+   padding: 10px 0px 10px 0;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+.about-destination__head--underline{
+    height: 1px;
+    flex: 1;
+    /* background-color: #f6f6f6; */
+    border-top: 1px dashed #e0dcdc;
+    margin-top: 19px;
+} 
+.about-destination__head--place{
+    
+}
+.about-destination__head--price{
+
+}
+.about-destination__body{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    padding: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about-destination__body--desc{
+
+}
+.abouur-destinaiton__body--time{
+    padding: 4px 8px;
+    border-radius: 30px;
+}
+.option-counter{
+   background-image: url(/assets/img/p-10.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.option-counter__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+
+    
+    
+}
+.option-counter__quantity{
+    font-size: 5rem;
+    line-height: 5rem;
+    color: var(--white-color);
+    padding: 20px 0 24px;
+    margin: 0;
+    
+}
+
+.option-counter__content{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    
+}
+/* ===================================DEN PHAN NEWS============================================ */
+.header-with-search-news{ 
+    background-image: linear-gradient( rgba(29, 43, 100, 0.3), rgba(29, 43,100, 0.4)),url(/assets/img/parallax-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search__heading-news{
+    text-align: left;
+    color: var(--white-color);
+    padding: 220px 0 60px 0;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 1);
+    margin: 0;
+}
+.news-body{
+    padding: 65px 0 65px 0;
+}
+.news-body__item{
+    display: flex;
+    height: 320px;
+}
+.news-body__item--img{
+    flex: 1;
+}
+.news-body__item--img img{
+    width: 100%;
+    height: 100%;
+}
+.news-body-item-info{
+    flex: 1;
+}
+.news-body-item-info-wrap{
+    padding: 30px;
+}
+.news-body-item-info__heading{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    /* color: var(--white-color); */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.news-body-item-info__title{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    /* color: var(--white-color); */
+    padding-bottom: 20px;
+}
+.news-body-item-info__paragrap{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+
+}
+.news-body-item-info__btn{
+
+}
+/* ================================DEN PHAN CONTACT============================================ */
+.header-with-search-contact{
+    background-image:linear-gradient(rgba(67, 74, 84, 0.1),rgba(67, 74, 84, 0.3)), url(/assets/img/parallax-2-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.search__heading-contact{
+    text-align: left;
+    color: var(--white-color);
+    padding: 220px 0 60px 0;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 1);
+    margin: 0;
+}
+.contact{
+    padding: 50px 0 50px 0;
+
+}
+
+.contact-wrap{
+    padding: 10px 15px;
+}
+.contact-form__heading{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--text-555);
+    padding-bottom: 20px;
+}
+.contact-form__paragrap{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.6rem;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.contact-form__name{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.contact-form__input-name{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: rgb(177,174,173);
+    line-height: 2.4rem;
+
+}
+.contact-form__email{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.contact-form__input-email{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(177,174,173);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+
+}
+.contact-form__message{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.contact-form__input-message{
+    width:100%;
+    
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    display: block;
+    margin: 15px 0px 0px 0px;    
+    border: none;
+    outline: none;
+    color: rgb(177,174,173);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+
+}
+.contact-form__btn{
+    padding: 10px 20px;
+    width: 30%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    display: block;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+.contact-map{
+   width: 570px;
+   height: 280px;
+   margin-bottom: 25px;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-address,
+.contact-email,
+.contact-phone,
+.contact-city{
+    padding: 14px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+
+.contact-address h5,
+.contact-city h5,
+.contact-checkin h5,
+.contact-checkout h5,
+.contact-email h5,
+.contact-phone h5
+{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-555);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contact-city span,
+.contact-checkin span,
+.contact-checkout span,
+.contact-email span,
+.contact-phone span,
+.contact-address span{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+}
+.contact-checkin{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-checkout{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-event{ 
+    padding-top: 25px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    padding-bottom: 20px;
+}
+.contact-phone-number{
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--text-555);
+}
